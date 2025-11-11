@@ -5,7 +5,7 @@
 
 #define DriveC      0x01
 #define DriveD      0x02
-#define Basepath    $1 "/home/patrick/Desktop/c-learning-projects/MS-DOS-OperatingSystem/drives/disk."
+#define Basepath    $1 "/home/patrick/Desktop/learning-projects/c-projects/MS-DOS-OperatingSystem/drives/disk."
 
 #define Blocksize   512
 
