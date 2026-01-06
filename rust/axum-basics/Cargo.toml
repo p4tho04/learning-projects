@@ -1,0 +1,9 @@
+[package]
+name = "axum-basics"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serde_json = "1.0"
+axum = "0.8.8"
+tokio = { version = "1", features = ["full", "rt-multi-thread"] }
