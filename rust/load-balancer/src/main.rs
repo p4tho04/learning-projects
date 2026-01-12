@@ -1,9 +1,8 @@
 use clap::Parser;
 use load_balancer::backend::{ CliArgs, http::HttpServer };
-use std::io::Result;
 use std::thread;
 
-fn main() -> Result<()> {
+fn main() -> Result<(), Box <dyn std::error::Error>> {
     let args = CliArgs::parse();
 
     let mut handles = Vec::new();

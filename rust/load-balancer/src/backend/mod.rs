@@ -1,4 +1,5 @@
 pub mod http;
+pub mod loadbalancer;
 use clap::Parser;
 
 #[derive(Parser, Debug)]
