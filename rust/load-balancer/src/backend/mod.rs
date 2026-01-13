@@ -8,8 +8,8 @@ pub struct CliArgs {
     #[arg(short, long, value_delimiter = ',', num_args = 1..)]
     pub ports: Vec<u16>,
 
-    // #[arg(short, long, default_value = "8080")]
-    // pub bind: u16,
+    #[arg(short, long, default_value = "8080")]
+    pub bind_port: u16,
 }
 
 

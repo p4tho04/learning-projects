@@ -4,17 +4,6 @@ use std::sync::{ Arc, Mutex };
 use std::thread;
 use serde::{ Deserialize, Serialize };
 
-// enum HttpMethod {
-//     GET,
-//     POST,
-//     PUT,
-//     DELETE,
-// }
-
-// trait Http {
-//     fn handle_http_request(stream: TcpStream) -> Result<HttpRequest>;
-// }
-
 #[derive(Debug)]
 struct HttpRequest {
     method: String,
@@ -91,7 +80,7 @@ impl HttpServer {
     }
 
     pub fn run(&self) -> Result<(), Box<dyn std::error::Error>> {
-        println!("BOOTING - Listening on {}...", self.listener.local_addr()?);
+        println!("BOOTING HTTP Server - Listening on {}...", self.listener.local_addr()?);
 
         for stream in self.listener.incoming() {
             match stream {
